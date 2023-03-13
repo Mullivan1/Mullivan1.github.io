@@ -1,1 +1,78 @@
+/* :root {
+    --c1-background: hsl()
+} */
 
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 4rem;
+    width: 100vw;
+    background-color: hsla(0.00, 50%, 80%, 100%);
+    display: grid;
+    grid-template-columns: 4rem auto 6rem;
+    grid-template-rows: 1fr;
+    ;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 2rem;
+    width: 100vw;
+    background-color: yellow;
+}
+
+main {
+    position: relative;
+    top: 4rem;
+    bottom: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, calc(100vh - 6rem)) calc(100vh - 4rem);
+    scroll-snap-type: y mandatory;
+}
+
+.sub-page {
+    scroll-snap-align: start;
+}
+
+hr {
+    align-items: center;
+    width: 30vw;
+    margin: 0;
+    border-width: 0.2rem;
+    border-radius: 0.2rem;
+    border-color: grey;
+    border-style: solid;
+    justify-self: center;;
+}
+
+header > hr {
+        grid-column: 1 / 4;
+}
+
+
+.cv-download {
+    justify-content: end;
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.button {
+    border: 0.1rem solid red;
+    padding: 0.5rem;
+
+}
+
+/* main {
+    display: grid;
+    grid-template-rows: repeat(4 auto);
+} */
