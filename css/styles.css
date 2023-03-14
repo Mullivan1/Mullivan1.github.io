@@ -1,1 +1,186 @@
 
+body,h1,h2,h3,h4,h5,h6,p,a,html {
+    font-family: "PP Mori",sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    font-size: 0.9rem;
+}
+
+body {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 1fr 3rem;
+    padding-right: 1vw;
+}
+
+header {
+    /* position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 4rem;
+    width: 100vw;
+    border-top: 0.2rem; */
+    background-color: #ffffff;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 4rem auto 7rem;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.home-button {
+    justify-self: center;
+}
+
+header li {
+        list-style-type: none;
+    }
+
+header .button {
+    margin: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+hr {
+    align-items: center;
+    width: 30vw;
+    margin: 0;
+    border-width: 0.2rem;
+    border-radius: 0.2rem;
+    border-color: grey;
+    border-style: solid;
+    justify-self: center;
+    margin-bottom: 0.4rem;
+}
+
+header > hr {
+        grid-column: 1 / 4;
+}
+
+.button {
+    height: 2.5rem;
+    width: 4.5rem;
+    border: 0.01rem solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgba(185, 104, 240, 1);
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.button:active {
+    background-color: rgba(185, 104, 240, 0.2);
+}
+
+main {
+    position: relative;
+    top: 4rem;
+    bottom: 2rem;
+    display: grid;
+    /* grid-template-rows: repeat(3, calc(100vh - 6rem)) calc(100vh - 4rem); */
+    grid-template-rows: 100vh auto auto auto auto;
+    scroll-snap-align: y mandatory;
+}
+
+
+
+.sub-page {
+    scroll-snap-align: start;
+}
+
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 15rem;
+    height: 100%;
+    align-self: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://place-puppy.com/600x300");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    width: 70vw;
+}
+
+.hero-text p {
+    width: auto 40vw;
+}
+
+.hero-header {
+    align-self: left;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 3rem;
+    width: 100vw;
+
+    background-color: white;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+footer hr {
+    grid-column: span 3;
+    margin-top: 0.4rem;
+}
+
+.return-to-top {
+   
+}
+
+#footer-socials {
+    display: flex;
+    justify-self: end;
+    margin-right: 4rem;
+}
+
+/* main {
+    display: grid;
+    grid-template-rows: repeat(4 auto);
+} */
