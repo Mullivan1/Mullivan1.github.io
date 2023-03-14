@@ -23,7 +23,7 @@ h1 {
 
 a:link,
 a:visited {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ body {
 /* Header formatting */
 
 header {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   width: 100vw;
   position: fixed;
   top: 0;
@@ -87,7 +87,7 @@ hr {
   margin: 0;
   border-width: 0.2rem;
   border-radius: 0.2rem;
-  border-color: grey;
+  border-color: rgb(128, 128, 128);
   border-style: solid;
   justify-self: center;
   margin-bottom: 0.4rem;
@@ -104,7 +104,7 @@ header > hr {
   width: 4.5rem;
   border: 0.01rem solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0.5rem;
   border-radius: 0.2rem;
   text-align: center;
@@ -150,7 +150,7 @@ header > hr {
 
 .hero-text {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   width: 70vw;
 }
 
@@ -343,7 +343,7 @@ footer {
   height: 3rem;
   width: 100vw;
 
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 
   display: grid;
   grid-template-rows: auto 1fr;
