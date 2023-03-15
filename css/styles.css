@@ -71,6 +71,7 @@ header li {
 
 header .button {
   margin: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -114,8 +115,6 @@ header > hr {
 /* Button formatting and animations */
 
 .button {
-  height: 2.5rem;
-  width: 4.5rem;
   border: 0.01rem solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
@@ -159,10 +158,9 @@ header > hr {
 
   min-height: 15rem;
   height: 100%;
-  align-self: center;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/images/hero-image.jpg);
+    url("../images/hero-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,6 +194,12 @@ header > hr {
   text-align: center;
 }
 
+.about-me-container img {
+  width: 60vw;
+  height: auto;
+  align-self: center;
+}
+
 @media only screen and (min-width: 600px) {
   .about-me-container {
     width: 90vw;
@@ -220,7 +224,6 @@ header > hr {
   .interests img {
     grid-column: 3/4;
     grid-row: 1/2;
-    block-size: cover;
   }
 
   .education {
