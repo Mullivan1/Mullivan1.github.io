@@ -97,6 +97,20 @@ header > hr {
   grid-column: 1 / 4;
 }
 
+/* Nav bar fade in on click */
+
+.faded,
+.faded:visited {
+  text-decoration: solid;
+  color: rgb(128, 128, 128);
+  font-size: 1.1rem;
+}
+
+.faded:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
 /* Button formatting and animations */
 
 .button {
@@ -126,7 +140,13 @@ header > hr {
 }
 
 .sub-page {
-  padding-top: 4rem;
+  padding-top: 6rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .sub-page {
+    padding-top: 4rem;
+  }
 }
 
 /* Hero Page */
@@ -222,6 +242,11 @@ header > hr {
     grid-column: 3/4;
     grid-row: 3/4;
   }
+}
+
+.about-me-container img {
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 /* Portfolio grid */
