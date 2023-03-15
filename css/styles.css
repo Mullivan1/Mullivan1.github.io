@@ -104,18 +104,27 @@ menu {
   margin-block-end: 0;
 }
 
+.faded {
+  font-size: 1.2rem;
+}
+
 /* Nav bar fade in on click */
 
 .faded,
 .faded:visited {
   text-decoration: solid;
   color: rgb(128, 128, 128);
-  font-size: 1.1rem;
 }
 
 .faded:hover {
   color: rgb(0, 0, 0);
   transition: 0.5s;
+}
+
+@media only screen and (min-width: 600px) {
+  .faded:visited {
+    color: rgb(128, 128, 128);
+  }
 }
 
 /* Button formatting and animations */
@@ -194,6 +203,46 @@ menu {
 @media only screen and (min-width: 600px) {
   .hero-header {
     font-size: 6rem;
+  }
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: rgb(254, 185, 198);
+  --color-2: rgb(185, 107, 133);
+  --color-3: rgb(118, 81, 139);
+}
+
+.title-word-2 {
+  --color-1: rgb(219, 173, 74);
+  --color-2: rgb(111, 144, 140);
+  --color-3: rgb(9, 96, 102);
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
   }
 }
 
@@ -405,6 +454,19 @@ footer hr {
   justify-self: end;
   margin-right: 4rem;
   gap: 0.6rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .flip:hover {
+    animation: flip 2s infinite;
+    animation-delay: 0s;
+  }
+  @keyframes flip {
+    0%,
+    40% {
+      transform: rotateY(360deg);
+    }
+  }
 }
 
 /* Icon formatting */
