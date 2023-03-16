@@ -75,7 +75,13 @@ header .button {
 }
 
 @media only screen and (min-width: 600px) {
+  header {
+    grid-template-columns: 7rem auto 7rem;
+  }
+
   .nav-bar {
+    width: 60vw;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -119,6 +125,10 @@ menu {
 .faded:hover {
   color: rgb(0, 0, 0);
   transition: 0.5s;
+}
+
+.faded:active {
+  text-decoration: solid;
 }
 
 /* Button formatting and animations */
