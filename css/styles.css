@@ -121,12 +121,6 @@ menu {
   transition: 0.5s;
 }
 
-@media only screen and (min-width: 600px) {
-  .faded:visited {
-    color: rgb(128, 128, 128);
-  }
-}
-
 /* Button formatting and animations */
 
 .button {
